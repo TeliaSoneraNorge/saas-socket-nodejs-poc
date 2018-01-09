@@ -17,6 +17,7 @@ The application is based on authentication against TaaS, and the device created 
 > 
 > - install [Node.js](https://nodejs.org/en/download/)
 > - install [npm](https://docs.npmjs.com/getting-started/installing-node)
+> - follow this [guide](https://tsnwiki.atlassian.net/wiki/spaces/NEXT/pages/296878140/Getting+Started) until the device registration
 
 1. Install
 ``` 
