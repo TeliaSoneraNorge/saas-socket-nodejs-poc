@@ -32,21 +32,9 @@ $ npm install
 $ npm start
 ```
 
-4. Point your browser to:
-```
-http://localhost:8443
-```
+4. Watch the random words being read from your device stream in the console.
 
 
-## Environment variables
-
-
-The environment variables required to run the application are as follows:
-
-- `CLIENT_ID` = `<IDP client id>`
-- `CLIENT_SECRET` = `<IDP client secret>`
-- `CLIENT_REDIRECT_URL` = `<IDP client redirect URL>`
-- `CLIENT_LOGOUT_URL` = `<IDP client logout URL>`
-- `IDENTITY_ISSUER` = `<url to IDP>`
-- `SESSION_SECRET` = `<something secret>`
-- `XQB_URL` = `<XQB API URL>`
+Note: You can switch between random words or random numbers, by (un)commenting the following lines in `index.js`:
+> 56: message.payload = (Math.floor(Math.random()*(30-20+1)+20)).toString(); 
+> 59: message.payload = randomWords({ exactly: 3, join: '-' });
