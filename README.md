@@ -37,4 +37,5 @@ $ npm start
 
 Note: You can switch between random words or random numbers, by (un)commenting the following lines in `index.js`:
 > 56: message.payload = (Math.floor(Math.random()*(30-20+1)+20)).toString(); 
+
 > 59: message.payload = randomWords({ exactly: 3, join: '-' });
