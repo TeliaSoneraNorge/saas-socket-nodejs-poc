@@ -59,16 +59,10 @@ function sendUDPMessage() {
   message.payload = randomWords({ exactly: 3, join: '-' });
 
   UDPclient.send(JSON.stringify(message), 0, JSON.stringify(message).length, UDP_PORT, UDP_HOST, (err, bytes) => {
-    if (err) {
-      throw err;
-    }
-    
-    console.log('UDP message sent to ' + UDP_HOST +':'+ UDP_PORT + ' @ ' + message.timestamp);
-});
+      if (err) {
+        throw err;
+      }
+      
+      console.log('UDP message sent to ' + UDP_HOST +':'+ UDP_PORT + ' @ ' + message.timestamp);
+  });
 }
-
-
-
-
-
-
